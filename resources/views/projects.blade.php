@@ -34,9 +34,7 @@
 
     <!-- Main CSS-->
     <link href="css/signup.css" rel="stylesheet" media="all">
-    <link href="css/quetions.css" rel="stylesheet" media="all">
-    <link href="css/stages.css" rel="stylesheet" media="all">
-
+    <link href="css/projects.css" rel="stylesheet" media="all">
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -151,10 +149,10 @@
             </div> <!-- /.col-md-12 -->
             <div class="col-md-6 col-sm-7 pages">
                 <div class="list-menu">
-                    <h2 class="pagetitle">الأنشطة والفعاليات</h2>
+                    <h2 class="pagetitle">المشاريع</h2>
                     <ul>
                         <li><a class="active" href="index.html">الرئيسية <span class="inActive">/</span></a></li>
-                        <li><a class="inActive">الأنشطة والفعاليات</a></li>
+                        <li><a class="inActive">المشاريع</a></li>
                     </ul>
                 </div> <!-- /.list-menu -->
             </div> <!-- /.col-md-12 -->
@@ -166,166 +164,166 @@
 <!-- Hero section -->
 <section class="hero-section">
     <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
-        <div class="col-md-12 Regcard">
-            <div>
-                <div class="card-body cardContainer">
-                    <div id="accordion">
-                        <div class="card-deck odd-card-deck">
-                            <div class="card">
-                                <img class="card-img-top  rounded-circle" src="img/3.jpg" alt="Card image cap"
-                                     style="height: 136px;width: 136px">
-                                <div class="card-body">
-                                    <h5 class="card-title">مساعدات الأسر الفقيرة</h5>
+        <ul class="info-wrapper">
+            <li class="infobox-11 mainCircle">
 
-                                </div>
+                <a class="row" href="#11">
+                        <span class="info-text">
+                            <h5 class="left-icons main">
+                                <span class="spaces">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </span>
 
-                            </div>
-                            <div class="card">
-                                <img class="card-img-top  rounded-circle" src="img/3.jpg" alt="Card image cap"
-                                     style="height: 136px;width: 136px">
-                                <div class="card-body">
-                                    <h5 class="card-title">مساعدات الأسر الفقيرة</h5>
+                            </h5>
 
-                                </div>
+                        </span>
+                    <span id="Point1" class="icon centerICon toOrder">الكلام الرئيسي</span>
 
-                            </div>
-                            <div class="card">
-                                <img class="card-img-top  rounded-circle" src="img/3.jpg" alt="Card image cap"
-                                     style="height: 136px;width: 136px">
-                                <div class="card-body">
-                                    <h5 class="card-title">مساعدات الأسر الفقيرة</h5>
+                </a>
+            </li>
+            <li class="infobox-1 Circle">
+                <a class="row" href="#1">
+                        <span class="info-text">
+                            <h5 id="" class="left-icons Point1">
+                                1 معلومات عن النشاط
+                            </h5>
 
-                                </div>
+                        </span>
+                    <span class="icon">
 
-                            </div>
-                            <div class="card">
-                                <img class="card-img-top rounded-circle" src="img/3.jpg" alt="Card image cap"
-                                     style="height: 136px;width: 136px">
-                                <div class="card-body">
-                                    <h5 class="card-title">مساعدات الأسر الفقيرة</h5>
 
-                                </div>
+                        </span>
+                </a>
+            </li>
 
-                            </div>
-                        </div>
-                        <div class="card-deck even-card-deck">
-                            <div class="card">
-                                <img class="card-img-top  rounded-circle" src="img/3.jpg" alt="Card image cap"
-                                     style="height: 136px;width: 136px">
-                                <div class="card-body">
-                                    <h5 class="card-title">مساعدات الأسر الفقيرة</h5>
+            <li class="infobox-2 Circle">
+                <a class="row" href="#2">
+                        <span class="info-text">
+                            <h5 class="left-icons Point2">
+                                2 معلومات عن النشاط
+                            </h5>
 
-                                </div>
+                        </span>
+                    <span class="icon">
 
-                            </div>
-                            <div class="card">
-                                <img class="card-img-top  rounded-circle" src="img/3.jpg" alt="Card image cap"
-                                     style="height: 136px;width: 136px">
-                                <div class="card-body">
-                                    <h5 class="card-title">مساعدات الأسر الفقيرة</h5>
+                        </span>
 
-                                </div>
+                </a>
+            </li>
+            <li class="infobox-3 Circle">
+                <a class="row" href="#3">
+                        <span class="info-text Point3">
+                            <h5 class="left-icons">3 معلومات عن النشاطمعلوماتمعلومات
+                            </h5>
 
-                            </div>
-                            <div class="card">
-                                <img class="card-img-top  rounded-circle" src="img/3.jpg" alt="Card image cap"
-                                     style="height: 136px;width: 136px">
-                                <div class="card-body">
-                                    <h5 class="card-title">مساعدات الأسر الفقيرة</h5>
+                        </span>
+                    <span class="icon">
 
-                                </div>
+                        </span>
 
-                            </div>
-                            <div class="card">
-                                <img class="card-img-top rounded-circle" src="img/3.jpg" alt="Card image cap"
-                                     style="height: 136px;width: 136px">
-                                <div class="card-body">
-                                    <h5 class="card-title">مساعدات الأسر الفقيرة</h5>
+                </a>
+            </li>
+            <li class="infobox-4 Circle1">
+                <a class="row" href="#4">
+                        <span class="info-text Point4">
+                            <h5>
+                                4 معلومات
+                            </h5>
 
-                                </div>
+                        </span>
+                    <span class="icon">
 
-                            </div>
-                        </div>
-                        <div class="card-deck odd-card-deck">
-                            <div class="card">
-                                <img class="card-img-top  rounded-circle" src="img/3.jpg" alt="Card image cap"
-                                     style="height: 136px;width: 136px">
-                                <div class="card-body">
-                                    <h5 class="card-title">مساعدات الأسر الفقيرة</h5>
+                        </span>
 
-                                </div>
+                </a>
+            </li>
+            <li class="infobox-5 Circle">
+                <a class="row" href="#5">
+                        <span class="icon toOrder">
 
-                            </div>
-                            <div class="card">
-                                <img class="card-img-top  rounded-circle" src="img/3.jpg" alt="Card image cap"
-                                     style="height: 136px;width: 136px">
-                                <div class="card-body">
-                                    <h5 class="card-title">مساعدات الأسر الفقيرة</h5>
+                        </span>
+                    <span class="info-text Point5">
+                            <h5 class="">
+                                5 معلومات عن النشاط
+                            </h5>
 
-                                </div>
+                        </span>
+                </a>
+            </li>
 
-                            </div>
-                            <div class="card">
-                                <img class="card-img-top  rounded-circle" src="img/3.jpg" alt="Card image cap"
-                                     style="height: 136px;width: 136px">
-                                <div class="card-body">
-                                    <h5 class="card-title">مساعدات الأسر الفقيرة</h5>
+            <li class="infobox-6 Circle">
+                <a class="row" href="#6">
+                        <span class="icon toOrder">
 
-                                </div>
+                        </span>
+                    <span class="info-text">
+                            <h5 class="Point6">
+                                6 معلومات عن النشاط
+                            </h5>
 
-                            </div>
-                            <div class="card">
-                                <img class="card-img-top rounded-circle" src="img/3.jpg" alt="Card image cap"
-                                     style="height: 136px;width: 136px">
-                                <div class="card-body">
-                                    <h5 class="card-title">مساعدات الأسر الفقيرة</h5>
+                        </span></a>
+            </li>
 
-                                </div>
+            <li class="infobox-7 Circle">
+                <a class="row" href="#7">
+                        <span class="icon toOrder">
 
-                            </div>
-                        </div>
-                        <div class="card-deck even-card-deck">
-                            <div class="card">
-                                <img class="card-img-top  rounded-circle" src="img/3.jpg" alt="Card image cap"
-                                     style="height: 136px;width: 136px">
-                                <div class="card-body">
-                                    <h5 class="card-title">مساعدات الأسر الفقيرة</h5>
+                        </span>
+                    <span class="info-text Point7">
+                            <h5>
+                                7 معلومات عن النشاط
+                            </h5>
 
-                                </div>
+                        </span>
+                </a>
+            </li>
 
-                            </div>
-                            <div class="card">
-                                <img class="card-img-top  rounded-circle" src="img/3.jpg" alt="Card image cap"
-                                     style="height: 136px;width: 136px">
-                                <div class="card-body">
-                                    <h5 class="card-title">مساعدات الأسر الفقيرة</h5>
+            <li class="infobox-8 Circle">
+                <a class="row" href="#8">
+                        <span class="info-text Point8">
+                            <h5>
+                                8 معلومات عن النشاط
+                            </h5>
 
-                                </div>
+                        </span>
+                    <span class="icon toOrder">
 
-                            </div>
-                            <div class="card">
-                                <img class="card-img-top  rounded-circle" src="img/3.jpg" alt="Card image cap"
-                                     style="height: 136px;width: 136px">
-                                <div class="card-body">
-                                    <h5 class="card-title">مساعدات الأسر الفقيرة</h5>
+                        </span>
 
-                                </div>
+                </a>
+            </li>
 
-                            </div>
-                            <div class="card">
-                                <img class="card-img-top rounded-circle" src="img/3.jpg" alt="Card image cap"
-                                     style="height: 136px;width: 136px">
-                                <div class="card-body">
-                                    <h5 class="card-title">مساعدات الأسر الفقيرة</h5>
+            <li class="infobox-9 Circle">
+                <a class="row" href="#9">
+                        <span class="info-text Point9">
+                            <h5 class="left-icons toOrder">
+                                9 معلومات عن النشاط
+                            </h5>
 
-                                </div>
+                        </span>
+                    <span class="icon toOrder">
 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+                        </span>
+
+                </a>
+            </li>
+
+            <li class="infobox-10 Circle">
+                <a class="row" href="#10">
+                        <span class="icon toOrder">
+                        </span>
+                    <span class="info-text Point10">
+                            <h5>
+                                10 معلومات عن النشاط
+                            </h5>
+
+                        </span>
+                </a>
+            </li>
+
+
+        </ul>
     </div>
 
 
@@ -381,6 +379,7 @@
 <!-- Main JS-->
 <script src="js/signup.js"></script>
 
+<script src="js/projects.js"></script>
 
 </body>
 

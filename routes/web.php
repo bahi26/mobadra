@@ -11,18 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-})->name('index');
+Route::get('/', 'HomeController@index')->name('index');
 
 Auth::routes(['verify' => true]);
 
-Route::get('/home', function () {
-    return view('index');
-});
-Route::get('/index', function () {
-    return view('index');
-});
+Route::get('/home', 'HomeController@index');
+Route::get('/index','HomeController@index');
 Route::post('/joinus', 'Auth\RegisterController@join');
 Route::get('/joinus', 'Auth\RegisterController@showJoinForm')->name('joinus');
 Route::post('/contactus', 'ContactController@contact');
@@ -31,6 +25,12 @@ Route::get('/contactus', function () {
 })->name('contactus');
 Route::get('/activities', function () {
     return view('circle');
+});
+Route::get('/stages', function () {
+    return view('stages');
+});
+Route::get('/projects', function () {
+    return view('projects');
 });
 Route::get('/questions', function () {
     return view('questions');
@@ -43,21 +43,10 @@ Route::post('/certify', 'DashBoardController@certify')->name('certify')->middlew
 Route::post('/verify_location', 'DashBoardController@verify')->name('verify_location')->middleware('admin');
 
 //admin
-Route::get('/users','DashBoardController@get_users')->name('users')->middleware('admin');
+Route::get('/dashboard','DashBoardController@get_users')->name('dashboard')->middleware('admin');
+Route::get('/profile','ProfileController@profile')->name('profile')->middleware('auth');
 
-Route::get('/map', function (){
-    return view('map');
-});
+Route::get('/m', 'CertificateController@mm');
 
-Route::get('/lmap', function(){
-    $config = array();
-    $config['center'] = 'Cairo, Egypt';
-    $config['geocodeCaching']=true;
-    GMaps::initialize($config);
 
-    $map = GMaps::create_map();
 
-    echo $map['js'];
-    echo $map['html'];
-//    return view('index')->with('map',$map);
-});

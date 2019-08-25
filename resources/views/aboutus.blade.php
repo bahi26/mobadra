@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="zxx">
 
 <head>
@@ -8,7 +7,7 @@
 	<meta name="keywords" content="glamour, fashion, html">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Favicon -->
-	<link href="img/logo.jpg" rel="shortcut icon" />
+	<link href="img/logo.png" rel="shortcut icon" />
 
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -18,10 +17,9 @@
 
 	<!-- Main Stylesheets -->
 	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/aboutus.css" />
 
-	<!-- Wow Lib -->
-	<link rel='stylesheet prefetch' href='http://daneden.github.io/animate.css/animate.min.css'>
-	<link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.css'>
+
 	<!-- Icons font CSS-->
 	<link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
 	<link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
@@ -36,18 +34,16 @@
 
 	<!-- Main CSS-->
 	<link href="css/signup.css" rel="stylesheet" media="all">
-	<link href="css/aboutus.css" rel="stylesheet" media="all">
+	<link href="css/quetions.css" rel="stylesheet" media="all">
 	<!--[if lt IE 9]>
 	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
-
-
 	<!-- for fontowesome inFire fox -->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.1/css/font-awesome.min.css" media="all"
 		  rel="stylesheet" type="text/css">
-
 </head>
+
 <body>
 <!-- Page Preloder -->
 <!-- <div id="preloder">
@@ -166,237 +162,143 @@
 
 	<!-- Hero section -->
 	<section class="hero-section">
+		<div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
+			<div class="col-md-12 Regcard">
+				<div>
+					<div id="cardContainer" class="card-body">
+						<div class="row">
+							<div class="card col-md-12 col-sm-12 aboutCard evenDiv">
+								<div class="card-body aboutDiv">
+									<h5 class="card-title">اول نقطة</h5>
+									<p class="card-text">Some quick example text to build on the card title and make
+										up
+										the bulk of the card's
+										content.</p>
 
-		<div class="news-left">
-			<div class="container">
-				<h3 class="title ">عن <span> المبادرة</span></h3>
-				<p class="con-para wow zoomIn" data-wow-duration="2s" data-wow-delay="2s" style="text-align: left">
-					هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل
-					الخارجي للنص أو شكل توضع
-					الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى
-					حد ما- للأحرف عوضاً
-					عن استخدام "هنا يوجد محتوى نصي، هنا يوجد محتوى نصي" فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء. العديد
-					من برامح النشر
-					المكتبي وبرامح تحرير صفحات الويب تستخدم لوريم إيبسوم بشكل إفتراضي كنموذج عن النص، وإذا قمت بإدخال
-					"lorem ipsum" في أي
-					محرك بحث ستظهر العديد من المواقع الحديثة العهد في نتائج البحث. على مدى السنين ظهرت نسخ جديدة ومختلفة
-					من نص لوريم إيبسوم،
-					أحياناً عن طريق الصدفة، وأحياناً عن عمد كإدخال بعض العبارات الفكاهية إليها.
-				</p>
-				<div class="hide-mobile">
-					<div class="col-md-6 col-news wow bounceInDown" data-wow-duration="1.5s" data-wow-delay="0.5s">
-						<div class="col-bottom two">
-							<h4>الرؤية </h4>
-							<p>المكتبي وبرامح تحرير صفحات الويب تستخدم لوريم إيبسوم بشكل إفتراضي كنموذج عن النص، وإذا
-								قمت بإدخال
-								"lorem ipsum" في أي
-								محرك بحث ستظهر العديد من المواقع الحديثة العهد في نتائج البحث. على مدى السنين ظهرت نسخ
-								جديدة ومختلفة
-								من نص لوريم إيبسوم،
-								أحياناً عن طريق الصدفة، وأحياناً عن عمد كإدخال بعض العبارات الفكاهية إليها.</p>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="card col-md-12 col-sm-12 aboutCard oddDiv">
+								<div class="card-body aboutDiv">
+									<h5 class="card-title">اول نقطة</h5>
+									<p class="card-text">Some quick example text to build on the card title and make
+										up
+										the bulk of the card's
+										content.</p>
 
-						</div>
-						<div class="col-news-top">
-							<div class="date-in">
-								<img class="img-responsive" src="img/vision.jpg" alt="">
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-md-6 col-news-right wow bounceInDown" data-wow-duration="1.5s" data-wow-delay="0s">
-						<div class="col-news-top">
-							<div class="date-in">
-								<img class="img-responsive" src="img/aboutus.jpg" alt="">
-							</div>
-							<div class="col-bottom">
-								<h4>عن المنحة</h4>
+						<div class="row">
+							<div class="card col-md-12 col-sm-12 aboutCard evenDiv">
+								<div class="card-body aboutDiv">
+									<h5 class="card-title">اول نقطة</h5>
+									<p class="card-text">Some quick example text to build on the card title and make
+										up
+										the bulk of the card's
+										content.</p>
 
-								<p>المكتبي وبرامح تحرير صفحات الويب تستخدم لوريم إيبسوم بشكل إفتراضي كنموذج عن النص،
-									وإذا قمت بإدخال
-									"lorem ipsum" في أي
-									محرك بحث ستظهر العديد من المواقع الحديثة العهد في نتائج البحث. على مدى السنين ظهرت
-									نسخ جديدة ومختلفة
-									من نص لوريم إيبسوم،
-									أحياناً عن طريق الصدفة، وأحياناً عن عمد كإدخال بعض العبارات الفكاهية إليها..</p>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="card col-md-12 col-sm-12 aboutCard oddDiv">
+								<div class="card-body aboutDiv">
+									<h5 class="card-title">اول نقطة</h5>
+									<p class="card-text">Some quick example text to build on the card title and make
+										up
+										the bulk of the card's
+										content.</p>
+
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="card col-md-12 col-sm-12 aboutCard evenDiv">
+								<div class="card-body aboutDiv">
+									<h5 class="card-title">اول نقطة</h5>
+									<p class="card-text">Some quick example text to build on the card title and make
+										up
+										the bulk of the card's
+										content.</p>
+
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="card col-md-12 col-sm-12 aboutCard oddDiv">
+								<div class="card-body aboutDiv">
+									<h5 class="card-title">اول نقطة</h5>
+									<p class="card-text">Some quick example text to build on the card title and make
+										up
+										the bulk of the card's
+										content.</p>
+
+								</div>
 							</div>
 						</div>
 
-					</div>
-					<div class="col-md-6 col-news wow bounceInDown" data-wow-duration="1.5s" data-wow-delay="1s">
-						<div class="col-bottom two">
-							<h4>مهمة </h4>
-							<p> المكتبي وبرامح تحرير صفحات الويب تستخدم لوريم إيبسوم بشكل إفتراضي كنموذج عن النص، وإذا
-								قمت بإدخال
-								"lorem ipsum" في أي
-								محرك بحث ستظهر العديد من المواقع الحديثة العهد في نتائج البحث. على مدى السنين ظهرت نسخ
-								جديدة ومختلفة
-								من نص لوريم إيبسوم،
-								أحياناً عن طريق الصدفة، وأحياناً عن عمد كإدخال بعض العبارات الفكاهية إليها.</p>
-
-						</div>
-						<div class="col-news-top">
-							<div class="date-in">
-								<img class="img-responsive" src="img/mission.jpg" alt="">
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-news-right wow bounceInDown" data-wow-duration="1.5s"
-						data-wow-delay="1.5s">
-						<div class="col-news-top">
-							<div class="date-in">
-								<img class="img-responsive" src="img/man.jpg" alt="">
-							</div>
-							<div class="col-bottom">
-								<h4>أي كلمة</h4>
-								<p> المكتبي وبرامح تحرير صفحات الويب تستخدم لوريم إيبسوم بشكل إفتراضي كنموذج عن النص،
-									وإذا قمت بإدخال
-									"lorem ipsum" في أي
-									محرك بحث ستظهر العديد من المواقع الحديثة العهد في نتائج البحث. على مدى السنين ظهرت
-									نسخ جديدة ومختلفة
-									من نص لوريم إيبسوم،
-									أحياناً عن طريق الصدفة، وأحياناً عن عمد كإدخال بعض العبارات الفكاهية إليها.
-								</p>
-							</div>
-						</div>
 
 					</div>
 				</div>
-				<div class="show-mobile">
-					<div class="col-md-6 col-news-right wow bounceInDown" data-wow-duration="1.5s" data-wow-delay="0s">
-						<div class="col-news-top">
-							<div class="date-in">
-								<img class="img-responsive" src="img/aboutus.jpg" alt="">
-							</div>
-							<div class="col-bottom">
-								<h4>عن المبادرة</h4>
-								<p>المكتبي وبرامح تحرير صفحات الويب تستخدم لوريم إيبسوم بشكل إفتراضي كنموذج عن النص،
-									وإذا قمت بإدخال
-									"lorem ipsum" في أي
-									محرك بحث ستظهر العديد من المواقع الحديثة العهد في نتائج البحث. على مدى السنين ظهرت
-									نسخ جديدة ومختلفة
-									من نص لوريم إيبسوم،
-									أحياناً عن طريق الصدفة، وأحياناً عن عمد كإدخال بعض العبارات الفكاهية إليها.</p>
-							</div>
-						</div>
-
-					</div>
-					<div class="col-md-6 col-news wow bounceInDown" data-wow-duration="1.5s" data-wow-delay="0.5s">
-						<div class="col-bottom two">
-							<h4>الرؤية </h4>
-							<p>المكتبي وبرامح تحرير صفحات الويب تستخدم لوريم إيبسوم بشكل إفتراضي كنموذج عن النص، وإذا
-								قمت بإدخال
-								"lorem ipsum" في أي
-								محرك بحث ستظهر العديد من المواقع الحديثة العهد في نتائج البحث. على مدى السنين ظهرت نسخ
-								جديدة ومختلفة
-								من نص لوريم إيبسوم،
-								أحياناً عن طريق الصدفة، وأحياناً عن عمد كإدخال بعض العبارات الفكاهية إليها.</p>
-
-						</div>
-						<div class="col-news-top">
-							<div class="date-in">
-								<img class="img-responsive" src="img/vision.jpg" alt="">
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-news-right wow bounceInDown" data-wow-duration="1.5s" data-wow-delay="1s">
-						<div class="col-bottom">
-							<h4>مهمة</h4>
-							<p> المكتبي وبرامح تحرير صفحات الويب تستخدم لوريم إيبسوم بشكل إفتراضي كنموذج عن النص، وإذا
-								قمت بإدخال
-								"lorem ipsum" في أي
-								محرك بحث ستظهر العديد من المواقع الحديثة العهد في نتائج البحث. على مدى السنين ظهرت نسخ
-								جديدة ومختلفة
-								من نص لوريم إيبسوم،
-								أحياناً عن طريق الصدفة، وأحياناً عن عمد كإدخال بعض العبارات الفكاهية إليها.</p>
-						</div>
-						<div class="col-news-top">
-							<div class="date-in">
-
-								<img class="img-responsive" src="img/mission.jpg" alt="">
-							</div>
-
-						</div>
-
-					</div>
-					<div class="col-md-6 col-news wow bounceInDown" data-wow-duration="1.5s" data-wow-delay="1.5s">
-						<div class="col-bottom two">
-							<h4>اي كلمة </h4>
-							<p> المكتبي وبرامح تحرير صفحات الويب تستخدم لوريم إيبسوم بشكل إفتراضي كنموذج عن النص، وإذا
-								قمت بإدخال
-								"lorem ipsum" في أي
-								محرك بحث ستظهر العديد من المواقع الحديثة العهد في نتائج البحث. على مدى السنين ظهرت نسخ
-								جديدة ومختلفة
-								من نص لوريم إيبسوم،
-								أحياناً عن طريق الصدفة، وأحياناً عن عمد كإدخال بعض العبارات الفكاهية إليها..</p>
-
-
-						</div>
-						<div class="col-news-top">
-							<div class="date-in">
-								<img class="img-responsive" src="img/man.jpg" alt="">
-							</div>
-						</div>
-					</div>
-
-				</div>
-				<div class="clearfix"> </div>
 			</div>
 		</div>
 
 
 	</section>
-	<!-- Hero section end -->
-	<!-- Footer section -->
-	<footer class="footer-section">
-		<div class="container">
-			<div class="row">
-				<div class="col-xl-12 col-lg-12 col-md-12 order-md-1 order-2 footer" style="margin: auto;">
-					<div class="copyright">
-						جميع الحقوق محفوظة &copy; <span>|</span> مبادرة إكتشف إبدأ
+<!-- Hero section end -->
+<!-- Footer section -->
+<footer class="footer-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-xl-12 col-lg-12 col-md-12 order-md-1 order-2 footer" style="margin: auto;">
+				<div class="copyright">
+					جميع الحقوق محفوظة &copy; <span>|</span> مبادرة إكتشف إبدأ
 
-					</div>
-
-					<div class="linksFooter">
-						&nbsp;<a href="http://www.wachannel.com/privacy" target="_self">شروط الإستخدام</a>
-						<span>|</span>&nbsp;<a href="http://www.wachannel.com/terms" target="_self">سياسة الخصوصية</a>
-					</div>
 				</div>
 
+				<div class="linksFooter">
+					&nbsp;<a href="http://www.wachannel.com/privacy" target="_self">شروط الإستخدام</a>
+					<span>|</span>&nbsp;<a href="http://www.wachannel.com/terms" target="_self">سياسة
+						الخصوصية</a>
+				</div>
 			</div>
-		</div>
-	</footer>
-	<!-- Footer section end -->
 
-
-	<!-- Search model -->
-	<div class="search-model">
-		<div class="h-100 d-flex align-items-center justify-content-center">
-			<div class="search-close-switch">+</div>
-			<form class="search-model-form">
-				<input type="text" id="search-input" placeholder="Search here.....">
-			</form>
 		</div>
 	</div>
-	<!-- Search model end -->
+</footer>
+<!-- Footer section end -->
 
 
-	<!--====== Javascripts & Jquery ======-->
-	<script src="js/jquery-3.2.1.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/isotope.pkgd.min.js"></script>
-	<script src="js/circle-progress.min.js"></script>
-	<script src="js/main.js"></script>
+<!-- Search model -->
+<div class="search-model">
+	<div class="h-100 d-flex align-items-center justify-content-center">
+		<div class="search-close-switch">+</div>
+		<form class="search-model-form">
+			<input type="text" id="search-input" placeholder="Search here.....">
+		</form>
+	</div>
+</div>
+<!-- Search model end -->
 
-	<!-- Vendor JS-->
-	<script src="vendor/select2/select2.min.js"></script>
-	<script src="vendor/datepicker/moment.min.js"></script>
-	<script src="vendor/datepicker/daterangepicker.js"></script>
 
-	<!-- Main JS-->
+<!--====== Javascripts & Jquery ======-->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/isotope.pkgd.min.js"></script>
+<script src="js/circle-progress.min.js"></script>
+<script src="js/main.js"></script>
 
-	<script src="js/signup.js"></script>
-	<script src='http://cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js'></script>
-	<script src="js/aboutus.js"></script>
+<!-- Vendor JS-->
+<script src="vendor/select2/select2.min.js"></script>
+<script src="vendor/datepicker/moment.min.js"></script>
+<script src="vendor/datepicker/daterangepicker.js"></script>
+
+<!-- Main JS-->
+<script src="js/signup.js"></script>
+
 
 </body>
 

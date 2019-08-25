@@ -126,13 +126,17 @@
 
 </header>
 <!-- Header section end -->
+<div class="main-nav">
+    <h2 class="pagetitle" style="padding-top: 16px; padding-bottom: 10px;text-align: center">أين انت من العالم</h2>
 
+</div>
 
 
 <!-- Hero section -->
+<!-- Hero section -->
 <section class="hero-section">
 
-    <div class="hero-slider owl-carousel">
+    <!-- <div class="hero-slider owl-carousel">
         <div class="hero-slider-item set-bg" data-setbg="img/worldmap.gif">
             <div class="hs-content">
                 <div class="container">
@@ -140,7 +144,8 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
+    <div id='map'></div>
 </section>
 <!-- Hero section end -->
 <!-- Footer section -->
@@ -186,6 +191,61 @@
 <script src="js/circle-progress.min.js"></script>
 <script src="js/main.js"></script>
 
+
+<!-- map  -->
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSWw1UPtURwVAL-UxE7pj1GSFfL64j7Os&callback=initMap">
+</script>
+<script>
+    function initMap() {
+        var mapOptions = {
+            center: new google.maps.LatLng(0, 0),
+            zoom: Math.ceil(Math.log2($(window).width())) - 8,
+        };
+
+        var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+
+        setTimeout(function () {
+            map.setCenter(new google.maps.LatLng(26.705753, 29.924526));
+            map.setZoom(6);
+
+
+
+            var participants = {!! json_encode($participants->toArray()) !!};
+            var len=participants.length;
+            var supporters = {!! json_encode($supporters->toArray()) !!};
+            var len=supporters.length;
+            console.log(supporters);
+            console.log(participants);
+            for (var i = 0; i < len; i++)
+                addMarker({lat:participants[i].latitude,lng:participants[i].longitude},
+                    participants[i].name,participants[i].sceond,participants[i].state, participants[i].city, map);
+            for (var i = 0; i < len; i++)
+                addMarker2({lat:supporters[i].latitude,lng:supporters[i].longitude},
+                    supporters[i].name,supporters[i].state, supporters[i].city, supporters[i].type, map);
+
+
+        }, 6000);
+
+    }
+
+    function addMarker2(myLatLng, userName, gov, city, type, map) {
+        var marker = new google.maps.Marker({
+            position: myLatLng,
+            map: map,
+            title: userName + '\n' + city + '/' + gov + '\n' + type,
+            zIndex: 3
+        });
+    }
+    function addMarker(myLatLng, userName,engName, gov, city, map) {
+        var marker = new google.maps.Marker({
+            position: myLatLng,
+            map: map,
+            title: userName + '\n' +engName+ '\n' + city + '/' + gov ,
+            zIndex: 3
+        });
+    }
+</script>
 </body>
 
 </html>

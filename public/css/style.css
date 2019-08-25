@@ -2225,3 +2225,6 @@ ol {
     max-width: 1120px !important;
   }
 }
+#map{
+    height: 500px;
+}

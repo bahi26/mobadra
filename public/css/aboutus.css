@@ -3157,4 +3157,20 @@ figure.effect-apollo:hover p {
             width: 100%;
     margin-left: 0px !important;
     }
-    
+    .aboutDiv{
+		text-align: right;
+		padding: 25px !important
+	}
+
+	.aboutCard{
+		margin-bottom: 20px
+	}
+
+
+.evenDiv{
+  background: #f6f6f4 !important;
+
+}
+.card-title{
+	color: #337ab7;
+}

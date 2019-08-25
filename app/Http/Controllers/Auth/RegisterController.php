@@ -68,7 +68,6 @@ class RegisterController extends Controller
     {
 
         $val=Validator::make($data, [
-            'type'=>['required','boolean'],
             'arabic_first_name'=>['required','max:20','string'],
             'arabic_second_name'=>['required','max:20','string'],
             'arabic_last_name'=>['required','max:20','string'],
@@ -91,7 +90,8 @@ class RegisterController extends Controller
     {
 
         $val=Validator::make($data, [
-            'type'=>['required','integer','lte:10','gte:1'],
+            'type'=>['required','integer','lte:3','gte:1'],
+            'classification'=>['required','integer','lte:9','gte:1'],
             'name'=>['required','max:100','string','unique:supporters'],
             'state'=>['required','integer','lte:27','gte:1'],
             'city'=>['required','max:50','string'],
@@ -104,7 +104,7 @@ class RegisterController extends Controller
 
         $participant=new Participant;
         $participant->user_id=$id;
-        $participant->type=$data['type'];
+
         $participant->arabic_first_name=$data['arabic_first_name'];
         $participant->arabic_second_name=$data['arabic_second_name'];
         $participant->arabic_last_name=$data['arabic_last_name'];
@@ -134,7 +134,7 @@ class RegisterController extends Controller
         $supporter->user_id=$id;
         $supporter->type=$data['type'];
         $supporter->name=$data['name'];
-
+        $supporter->classification=$data['classification'];
 
         $supporter->state=$data['state'];
 
@@ -153,7 +153,7 @@ class RegisterController extends Controller
         $user->participant=$this->store_participant($user->id,$data);
         return $user;
     }
-    protected function creat_join(array $data)
+    protected function create_join(array $data)
     {
         $user= User::create([
             'email' => $data['email'],

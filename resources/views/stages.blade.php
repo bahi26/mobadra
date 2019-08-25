@@ -151,10 +151,10 @@
             </div> <!-- /.col-md-12 -->
             <div class="col-md-6 col-sm-7 pages">
                 <div class="list-menu">
-                    <h2 class="pagetitle">الأنشطة والفعاليات</h2>
+                    <h2 class="pagetitle">محاور المبادرة</h2>
                     <ul>
                         <li><a class="active" href="index.html">الرئيسية <span class="inActive">/</span></a></li>
-                        <li><a class="inActive">الأنشطة والفعاليات</a></li>
+                        <li><a class="inActive">محاور المبادرة</a></li>
                     </ul>
                 </div> <!-- /.list-menu -->
             </div> <!-- /.col-md-12 -->
@@ -171,7 +171,7 @@
                 <div class="card-body cardContainer">
                     <div id="accordion">
                         <div class="card-deck odd-card-deck">
-                            <div class="card">
+                            <div class="card odd-card">
                                 <img class="card-img-top  rounded-circle" src="img/3.jpg" alt="Card image cap"
                                      style="height: 136px;width: 136px">
                                 <div class="card-body">
@@ -180,7 +180,7 @@
                                 </div>
 
                             </div>
-                            <div class="card">
+                            <div class="card even-card">
                                 <img class="card-img-top  rounded-circle" src="img/3.jpg" alt="Card image cap"
                                      style="height: 136px;width: 136px">
                                 <div class="card-body">
@@ -189,7 +189,7 @@
                                 </div>
 
                             </div>
-                            <div class="card">
+                            <div class="card odd-card">
                                 <img class="card-img-top  rounded-circle" src="img/3.jpg" alt="Card image cap"
                                      style="height: 136px;width: 136px">
                                 <div class="card-body">
@@ -198,7 +198,7 @@
                                 </div>
 
                             </div>
-                            <div class="card">
+                            <div class="card even-card">
                                 <img class="card-img-top rounded-circle" src="img/3.jpg" alt="Card image cap"
                                      style="height: 136px;width: 136px">
                                 <div class="card-body">
@@ -209,7 +209,7 @@
                             </div>
                         </div>
                         <div class="card-deck even-card-deck">
-                            <div class="card">
+                            <div class="card odd-card">
                                 <img class="card-img-top  rounded-circle" src="img/3.jpg" alt="Card image cap"
                                      style="height: 136px;width: 136px">
                                 <div class="card-body">
@@ -218,7 +218,7 @@
                                 </div>
 
                             </div>
-                            <div class="card">
+                            <div class="card even-card">
                                 <img class="card-img-top  rounded-circle" src="img/3.jpg" alt="Card image cap"
                                      style="height: 136px;width: 136px">
                                 <div class="card-body">
@@ -227,7 +227,7 @@
                                 </div>
 
                             </div>
-                            <div class="card">
+                            <div class="card odd-card">
                                 <img class="card-img-top  rounded-circle" src="img/3.jpg" alt="Card image cap"
                                      style="height: 136px;width: 136px">
                                 <div class="card-body">
@@ -236,7 +236,7 @@
                                 </div>
 
                             </div>
-                            <div class="card">
+                            <div class="card even-card">
                                 <img class="card-img-top rounded-circle" src="img/3.jpg" alt="Card image cap"
                                      style="height: 136px;width: 136px">
                                 <div class="card-body">
@@ -247,7 +247,7 @@
                             </div>
                         </div>
                         <div class="card-deck odd-card-deck">
-                            <div class="card">
+                            <div class="card odd-card">
                                 <img class="card-img-top  rounded-circle" src="img/3.jpg" alt="Card image cap"
                                      style="height: 136px;width: 136px">
                                 <div class="card-body">
@@ -256,7 +256,7 @@
                                 </div>
 
                             </div>
-                            <div class="card">
+                            <div class="card even-card">
                                 <img class="card-img-top  rounded-circle" src="img/3.jpg" alt="Card image cap"
                                      style="height: 136px;width: 136px">
                                 <div class="card-body">
@@ -265,7 +265,7 @@
                                 </div>
 
                             </div>
-                            <div class="card">
+                            <div class="card odd-card">
                                 <img class="card-img-top  rounded-circle" src="img/3.jpg" alt="Card image cap"
                                      style="height: 136px;width: 136px">
                                 <div class="card-body">
@@ -274,7 +274,7 @@
                                 </div>
 
                             </div>
-                            <div class="card">
+                            <div class="card even-card">
                                 <img class="card-img-top rounded-circle" src="img/3.jpg" alt="Card image cap"
                                      style="height: 136px;width: 136px">
                                 <div class="card-body">
@@ -285,7 +285,7 @@
                             </div>
                         </div>
                         <div class="card-deck even-card-deck">
-                            <div class="card">
+                            <div class="card odd-card">
                                 <img class="card-img-top  rounded-circle" src="img/3.jpg" alt="Card image cap"
                                      style="height: 136px;width: 136px">
                                 <div class="card-body">
@@ -294,7 +294,7 @@
                                 </div>
 
                             </div>
-                            <div class="card">
+                            <div class="card even-card">
                                 <img class="card-img-top  rounded-circle" src="img/3.jpg" alt="Card image cap"
                                      style="height: 136px;width: 136px">
                                 <div class="card-body">
@@ -303,7 +303,7 @@
                                 </div>
 
                             </div>
-                            <div class="card">
+                            <div class="card odd-card">
                                 <img class="card-img-top  rounded-circle" src="img/3.jpg" alt="Card image cap"
                                      style="height: 136px;width: 136px">
                                 <div class="card-body">
@@ -312,7 +312,7 @@
                                 </div>
 
                             </div>
-                            <div class="card">
+                            <div class="card even-card">
                                 <img class="card-img-top rounded-circle" src="img/3.jpg" alt="Card image cap"
                                      style="height: 136px;width: 136px">
                                 <div class="card-body">

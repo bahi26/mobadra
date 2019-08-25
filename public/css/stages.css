@@ -1,0 +1,66 @@
+body {
+  overflow-x: hidden;
+}
+.card-img-top {
+  height: 136px;
+  width: 136px;
+  margin: auto;
+  margin-top: 20px;
+  border: 3px solid #882067;
+  box-shadow: 0px 36px 40px grey;
+  margin-bottom: 20px;
+}
+
+.card {
+  border: 0px;
+}
+
+.odd-card-deck {
+  background-color: #f2f1ef;
+}
+
+.even-card-deck {
+  background-color: #e7e6e2;
+}
+.card {
+  background-color: transparent;
+}
+
+.card:hover {
+  background: white;
+}
+.Regcard {
+  padding: 0px;
+}
+.cardContainer {
+  padding: 0px;
+}
+.card-deck {
+  padding: 0px 100px 0px 100px;
+}
+
+@media screen and (max-width: 550px) {
+  .card-deck {
+    padding: 0% 4% 0% 4% !important;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .even-card {
+    background-color: #e7e6e2;
+  }
+
+  .odd-card {
+    background-color: #f2f1ef;
+  }
+  .odd-card-deck,
+  .even-card-deck {
+    background-color: #fff;
+  }
+}
+.card-title {
+  color: #882067;
+  font-size: 30px;
+
+  text-align: center;
+}

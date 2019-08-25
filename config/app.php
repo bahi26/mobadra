@@ -162,6 +162,7 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
+        Stevebauman\Location\LocationServiceProvider::class,
 
 
         /*
@@ -232,6 +233,7 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'Image' => Intervention\Image\Facades\Image::class,
         'GMaps' => FarhanWazir\GoogleMaps\Facades\GMapsFacade::class,
+        'Location' => Stevebauman\Location\Facades\Location::class,
 
     ],
 

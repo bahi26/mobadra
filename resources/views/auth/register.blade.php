@@ -193,24 +193,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row row-space row">
-                            <div class="col-sm-12 col-xl-12 inputDiv">
-                                <div class="input-group row">
-                                    <label class="label col-md-2">نوع التسجيل <span>*</span>:
-                                    </label>
-                                    <div class="rs-select2 js-select-simple select--no-search col-md-10 inputDiv"
-                                         style="width:100%;padding: 0px">
-                                        <select name="type">
-                                            <option disabled="disabled" selected="selected">أختار نوع التسجيل
-                                            </option>
-                                            <option value="0">متدرب</option>
-                                            <option value="1">متطوع</option>
-                                        </select>
-                                        <div class="select-dropdown"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
                         <h4 class="title" style="margin-top: 10px"><i class="fa fa-address-card"></i> بيانات الحساب
                         </h4>
 
@@ -535,7 +518,8 @@
 
 
                         <div class="p-t-15 submitContaier">
-                            <button class="btn btn--radius-2 btn--blue submit" type="submit">تسجيل</button>
+                            <input type="hidden" name="position" id="position">
+                            <button class="btn btn--radius-2 btn--blue submit" type="submit" onclick="getLocation()">تسجيل</button>
                         </div>
                     </form>
                 </div>
@@ -595,6 +579,19 @@
 
 <!-- Main JS-->
 <script src="js/signup.js"></script>
+<script type="text/javascript">
+    var x = document.getElementById("position");
+    document.onload(getLocation());
+    function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+        }
+    }
+
+    function showPosition(position) {
+        x.value=position.coords.longitude+','+position.coords.latitude;
+    }
+</script>
 
 
 </body>

@@ -194,7 +194,7 @@
                             </div>
                         </div>
                         <div class="row row-space row">
-                            <div class="col-md-12 col-sm-12 col-xl-12 inputDiv">
+                            <div class="col-sm-12 col-xl-12 inputDiv">
                                 <div class="input-group row">
                                     <label class="label col-md-2">نوع التسجيل <span>*</span>:
                                     </label>
@@ -203,6 +203,25 @@
                                         <select name="type">
                                             <option disabled="disabled" selected="selected">أختار نوع التسجيل
                                             </option>
+                                            <option value="1">متبرع لدعم المبادرة</option>
+                                            <option value="2"> متطوع لدعم المبادرة</option>
+                                            <option value="3">راعى لدعم المبادرة</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space row">
+                            <div class="col-md-12 col-sm-12 col-xl-12 inputDiv">
+                                <div class="input-group row">
+                                    <label class="label col-md-2">التصنيف<span>*</span>:
+                                    </label>
+                                    <div class="rs-select2 js-select-simple select--no-search col-md-10 inputDiv"
+                                         style="width:100%;padding: 0px">
+                                        <select name="classification">
+                                            <option disabled="disabled" selected="selected">أختار التصنيف
+                                            </option>
                                             <option value="1">موقع إلكترونى</option>
                                             <option value="2">شركة</option>
                                             <option value="3">جمعية</option>
@@ -210,9 +229,8 @@
                                             <option value="5">مدرسة</option>
                                             <option value="6">معهد</option>
                                             <option value="7">جامعة</option>
-                                            <option value="8">متبرع لدعم</option>
-                                            <option value="9">المبادرة</option>
-                                            <option value="10">راعى لدعم المبادرة</option>
+                                            <option value="8">نادى</option>
+                                            <option value="9">نقابة</option>
                                         </select>
                                         <div class="select-dropdown"></div>
                                     </div>
@@ -276,6 +294,7 @@
 
                         </div>
                         <div class="p-t-15 submitContaier">
+                            <input type="hidden" name="position" id="position">
                             <button class="btn btn--radius-2 btn--blue submit" type="submit">تسجيل</button>
                         </div>
                     </form>
@@ -336,6 +355,19 @@
 
 <!-- Main JS-->
 <script src="js/signup.js"></script>
+<script type="text/javascript">
+    var x = document.getElementById("position");
+    document.onload(getLocation());
+    function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+        }
+    }
+
+    function showPosition(position) {
+        x.value=position.coords.longitude+','+position.coords.latitude;
+    }
+</script>
 
 
 </body>

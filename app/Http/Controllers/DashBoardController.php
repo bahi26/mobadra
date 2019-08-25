@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\URL;
 use App\Notifications\CertificateNotification;
 use Notification;
+use App\Note;
 
 class DashBoardController extends Controller
 {
@@ -50,6 +51,8 @@ class DashBoardController extends Controller
         $status=array('اعزب','متزوج');
         $degree=array('ثانوي','دبلوم','جامعي','ماجيستر','دكتوراه');
         $type=array('متدرب','متطوع');
+        $type2=array('','متبرع لدعم المبادرة','متطوع لدعم المبادرة','راعى لدعم المبادرة');
+        $class=array('','موقع الكتروني','شركة','جمعية','مؤسسة','مدرسة','معهد','جامعة','نادى','نقابة');
         $users = DB::table('users')
             ->join('participants', 'users.id', '=', 'participants.user_id')
 //            ->where('users.data', '>', 100)
@@ -62,7 +65,7 @@ class DashBoardController extends Controller
             $user->gender=$gender[$user->gender];
             $user->status=$status[$user->status];
             $user->degree=$degree[$user->degree];
-            $user->type=$type[$user->type];
+            //$user->type=$type[$user->type];
             if(is_null($user->certificate))
                 $user->certificate='لاتوجد';
             if(is_null($user->email_verified_at))
@@ -70,7 +73,25 @@ class DashBoardController extends Controller
             else
                 $user->email_verified_at='مفعل';
         }
-        return view('users')->with('users',$users);
+        $users2 = DB::table('users')
+            ->join('supporters', 'users.id', '=', 'supporters.user_id')
+//            ->where('users.data', '>', 100)
+            ->orderBy('users.created_at', 'desc')
+            ->get();
+
+        foreach ($users2 as $user)
+        {
+            $user->state = $egypt[$user->state];
+            $user->type = $type2[$user->type];
+            $user->class = $class[$user->classification];
+            if(is_null($user->certificate))
+                $user->certificate='لاتوجد';
+            if(is_null($user->email_verified_at))
+                $user->email_verified_at='غير مفعل';
+            else
+                $user->email_verified_at='مفعل';
+        }
+        return view('dashboard')->with('participants',$users)->with('supporters',$users2);
     }
     private function getToken($length, $seed){
         $token = "";
@@ -84,40 +105,85 @@ class DashBoardController extends Controller
         }
         return $token;
     }
-    public function certify(Request $request)
+
+    public function create($token)
     {
 
-        $id=$request->id;
-        $user=Participant::find($id);
-        if(is_null($user)|| !is_null($user->certificate))
-            return back()->withInput();
-
-
-        do
+        $val="";
+        $comb=1;
+        $token2="";
+        for($i=0;$i<10-strlen($token);++$i)
+            $token2.='0';
+        $token2.=$token;
+        for($i=strlen($token2)-1;$i>-1 ;--$i)
         {
-            $token = $this->getToken(8, $id);
-            $hashed = 'EN'. $token . substr(strftime("%Y", time()),2);
-            $c = Certify::find($hashed);
+
+            $c=ord($token2[$i])+$comb;
+            $comb=0;
+            if ($c==58)
+                $c=65;
+
+            if ($c==91)
+            {
+                $c = 48;
+                $comb = 1;
+            }
+            $val.=chr($c);
         }
-        while(!is_null($c));
-        $name=$user->english_first_name.' '.$user->english_last_name;
-        $this->makeimage($name,$request->root()."/certificate/",$hashed);
-//        $user->certificate=$hashed;
-//        $user->save();
-//
-//
-//        $certificate=new Certify;
-//        $certificate->link=$hashed;
-//        $certificate->user_id=$id;
-//        $certificate->save();
 
+        $char=strrev($val);
+        $first=0;
+        for($i=0;$i<strlen($char) ;++$i)
+        {
 
-        $users=User::find($id);
+            if($char[$i] !='0')
+                break;
+            $first++;
+        }
 
-        $img='img/'.$hashed.'.jpg';
+        $out="";
+        for ($i=$first;$i<strlen($char);$i++)
+            $out.=$char[$i];
 
-        Notification::send($users, new CertificateNotification($img));
-        return redirect()->route('users');
+        return $out;
+    }
+    public function notify(Request $request)
+    {
+        if (is_null($request->message))
+            return ;
+        $ids=$request->notify;
+        if(!is_null($ids))
+            foreach ($ids as $id)
+            {
+                $user = User::find($id);
+                if (is_null($user))
+                    continue;
+                $note= new Note();
+                $note->user_id=$id;
+                $note->message=$request->message;
+                $note->save();
+            }
+    }
+    public function certify(Request $request)
+    {
+        $this->notify($request);
+        $ids=$request->certify;
+        $hashed=User::max('certificate');
+        if(!is_null($ids))
+            foreach ($ids as $id)
+            {
+                print ($id);
+                $user = User::find($id);
+                if (is_null($user) || !is_null($user->certificate))
+                    continue;
+                $hashed=$this->create($hashed);
+                $name = $user->english_first_name . ' ' . $user->english_last_name;
+                $this->makeimage($name, $request->root() . "/certificate/", $hashed);
+                $user->certificate = $hashed;
+                $user->save();
+            }
+
+        return redirect()->route('dashboard');
     }
     public function makeimage($text,$url,$link)
     {
